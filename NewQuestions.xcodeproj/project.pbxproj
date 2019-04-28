@@ -24,6 +24,7 @@
 		13CE526D2272C7C4003BBF37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CE526C2272C7C4003BBF37 /* Assets.xcassets */; };
 		13CE52702272C7C4003BBF37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CE526E2272C7C4003BBF37 /* LaunchScreen.storyboard */; };
 		13CE52782272C841003BBF37 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CE52772272C841003BBF37 /* Questions.swift */; };
+		13E4E4282275868600689E06 /* Intro2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E4E4272275868600689E06 /* Intro2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		13CE526F2272C7C4003BBF37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13CE52712272C7C4003BBF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13CE52772272C841003BBF37 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		13E4E4272275868600689E06 /* Intro2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				13B4747F2273349C00E68DB7 /* ScrollViewController.swift */,
 				132429C72274946100D6B1B1 /* Page View Start */,
 				132429CE2274B6D000D6B1B1 /* IntroViewController.swift */,
+				13E4E4272275868600689E06 /* Intro2ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				132429C42274945100D6B1B1 /* SecondPageViewController.swift in Sources */,
 				13CE52662272C7C3003BBF37 /* AppDelegate.swift in Sources */,
 				13B474822273363C00E68DB7 /* Slide.swift in Sources */,
+				13E4E4282275868600689E06 /* Intro2ViewController.swift in Sources */,
 				132429C02274940B00D6B1B1 /* PageViewController.swift in Sources */,
 				13B4747C227331F300E68DB7 /* SecondViewController.swift in Sources */,
 				13B4747A227327DB00E68DB7 /* QuestionData.swift in Sources */,

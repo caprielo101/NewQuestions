@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         self.setNeedsStatusBarAppearanceUpdate()
         // Do any additional setup after loading the view.
         view.backgroundColor = .lightGray
+        questionLabel.textColor = .white
         setupButton()
         updateQuestion()
         updateUI()
@@ -133,6 +134,7 @@ class ViewController: UIViewController {
 //        debugPrint(points)
         return points
     }
+    
     func setupButton(){
         for button in buttons {
             button.layer.cornerRadius = 10
