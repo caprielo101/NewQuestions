@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class Result {
     
@@ -51,6 +52,9 @@ class SecondViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let realm = try! Realm()
+        points = Double(realm.objects(Tests.self).last!.score)
+
         debugPrint(points)
         // Do any additional setup after loading the view.
         setupButton()
@@ -89,10 +93,10 @@ class SecondViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nextVC = segue.destination as! HomeViewController
+        let nextVC = segue.destination as! BottomSheetController
         
         // VC points segue (points is Double type)
-        nextVC.points = Int(points)
+        //nextVC.points = Int(points)
         
     }
     
@@ -106,12 +110,13 @@ class SecondViewController: UIViewController {
         let now = Date()
         let elapsedTime = now.timeIntervalSince(animationStartDate)
         
+        let percentageProgress: Double! = Double(points)/27.0*100
         if elapsedTime > animationDuration {
-            self.pointsLabel.text = String(format:"%.0f/27",points)
+            self.pointsLabel.text = String(format:"%.0f",percentageProgress) + "%"
         } else {
             let percentage = elapsedTime / animationDuration
-            let value = startValue + (percentage * (points - startValue))
-            self.pointsLabel.text = String(format:"%.0f/27",value)
+            let value = startValue + (percentage * (percentageProgress - startValue))
+            self.pointsLabel.text = String(format:"%.0f",value) + "%"
         }
         
         

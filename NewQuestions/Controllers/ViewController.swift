@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController {
 
@@ -87,10 +88,22 @@ class ViewController: UIViewController {
             updateUI()
         }else {
             points = calculatePoints()
-            performSegue(withIdentifier: "TestCompletionSegue", sender: self)
+            savePoint(points: points); performSegue(withIdentifier: "TestCompletionSegue", sender: self)
             
         }
         showButton()
+    }
+    
+    func savePoint(points: Int) {
+        var realm = try! Realm()
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+        let test = Tests()
+        test.score = points
+        test.uuid = UUID().uuidString
+        
+        try! realm.write {
+            realm.add(test)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

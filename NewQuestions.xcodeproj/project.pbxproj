@@ -25,6 +25,16 @@
 		13CE52702272C7C4003BBF37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CE526E2272C7C4003BBF37 /* LaunchScreen.storyboard */; };
 		13CE52782272C841003BBF37 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CE52772272C841003BBF37 /* Questions.swift */; };
 		13E4E4282275868600689E06 /* Intro2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E4E4272275868600689E06 /* Intro2ViewController.swift */; };
+		4BE409DE5004356C12B9417C /* Pods_NewQuestions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2BC4746CB60AFBEB452573 /* Pods_NewQuestions.framework */; };
+		8ED8299E2275FAB400122E73 /* BottomSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8299C2275FAB400122E73 /* BottomSheetController.swift */; };
+		8ED8299F2275FAB400122E73 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8299D2275FAB400122E73 /* BottomSheetView.swift */; };
+		8ED829A62275FAEB00122E73 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED829A02275FAEB00122E73 /* Tests.swift */; };
+		8ED829A72275FAEB00122E73 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED829A12275FAEB00122E73 /* Users.swift */; };
+		8ED829A82275FAEB00122E73 /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED829A22275FAEB00122E73 /* Challenges.swift */; };
+		8ED829A92275FAEB00122E73 /* DepressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED829A32275FAEB00122E73 /* DepressionTests.swift */; };
+		8ED829AA2275FAEB00122E73 /* Feedbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED829A42275FAEB00122E73 /* Feedbacks.swift */; };
+		8ED829AB2275FAEB00122E73 /* BottomSheetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED829A52275FAEB00122E73 /* BottomSheetView.xib */; };
+		8ED829B12276887700122E73 /* AllChallengesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED829B02276887700122E73 /* AllChallengesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +58,18 @@
 		13CE52712272C7C4003BBF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13CE52772272C841003BBF37 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		13E4E4272275868600689E06 /* Intro2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro2ViewController.swift; sourceTree = "<group>"; };
+		2F2BC4746CB60AFBEB452573 /* Pods_NewQuestions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewQuestions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED8299C2275FAB400122E73 /* BottomSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetController.swift; sourceTree = "<group>"; };
+		8ED8299D2275FAB400122E73 /* BottomSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		8ED829A02275FAEB00122E73 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		8ED829A12275FAEB00122E73 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		8ED829A22275FAEB00122E73 /* Challenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
+		8ED829A32275FAEB00122E73 /* DepressionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepressionTests.swift; sourceTree = "<group>"; };
+		8ED829A42275FAEB00122E73 /* Feedbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feedbacks.swift; sourceTree = "<group>"; };
+		8ED829A52275FAEB00122E73 /* BottomSheetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomSheetView.xib; sourceTree = "<group>"; };
+		8ED829B02276887700122E73 /* AllChallengesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChallengesTableViewController.swift; sourceTree = "<group>"; };
+		AD3428714EAFCF758A9DBD5B /* Pods-NewQuestions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewQuestions.release.xcconfig"; path = "Target Support Files/Pods-NewQuestions/Pods-NewQuestions.release.xcconfig"; sourceTree = "<group>"; };
+		F5C8ED7CF90686377B1C3A2A /* Pods-NewQuestions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewQuestions.debug.xcconfig"; path = "Target Support Files/Pods-NewQuestions/Pods-NewQuestions.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +77,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE409DE5004356C12B9417C /* Pods_NewQuestions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		015611109C5B30CC6035D974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F2BC4746CB60AFBEB452573 /* Pods_NewQuestions.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		132429C72274946100D6B1B1 /* Page View Start */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +106,8 @@
 		13B474752273243F00E68DB7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8ED8299C2275FAB400122E73 /* BottomSheetController.swift */,
+				8ED8299D2275FAB400122E73 /* BottomSheetView.swift */,
 				13CE52652272C7C3003BBF37 /* AppDelegate.swift */,
 				132429BD2274919600D6B1B1 /* HomeViewController.swift */,
 				13CE52672272C7C3003BBF37 /* ViewController.swift */,
@@ -83,6 +116,7 @@
 				132429C72274946100D6B1B1 /* Page View Start */,
 				132429CE2274B6D000D6B1B1 /* IntroViewController.swift */,
 				13E4E4272275868600689E06 /* Intro2ViewController.swift */,
+				8ED829B02276887700122E73 /* AllChallengesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -108,6 +142,12 @@
 		13B474782273274D00E68DB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8ED829A52275FAEB00122E73 /* BottomSheetView.xib */,
+				8ED829A22275FAEB00122E73 /* Challenges.swift */,
+				8ED829A32275FAEB00122E73 /* DepressionTests.swift */,
+				8ED829A42275FAEB00122E73 /* Feedbacks.swift */,
+				8ED829A02275FAEB00122E73 /* Tests.swift */,
+				8ED829A12275FAEB00122E73 /* Users.swift */,
 				13CE52772272C841003BBF37 /* Questions.swift */,
 				13B47479227327DB00E68DB7 /* QuestionData.swift */,
 				13B474812273363C00E68DB7 /* Slide.swift */,
@@ -121,6 +161,8 @@
 			children = (
 				13CE52642272C7C3003BBF37 /* NewQuestions */,
 				13CE52632272C7C3003BBF37 /* Products */,
+				F1693CED1F257FDADCD89E7B /* Pods */,
+				015611109C5B30CC6035D974 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +185,15 @@
 			path = NewQuestions;
 			sourceTree = "<group>";
 		};
+		F1693CED1F257FDADCD89E7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5C8ED7CF90686377B1C3A2A /* Pods-NewQuestions.debug.xcconfig */,
+				AD3428714EAFCF758A9DBD5B /* Pods-NewQuestions.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13CE52742272C7C4003BBF37 /* Build configuration list for PBXNativeTarget "NewQuestions" */;
 			buildPhases = (
+				076C9E4C1393806C49937E4C /* [CP] Check Pods Manifest.lock */,
 				13CE525E2272C7C3003BBF37 /* Sources */,
 				13CE525F2272C7C3003BBF37 /* Frameworks */,
 				13CE52602272C7C3003BBF37 /* Resources */,
+				BB64F6809F87A4159049720F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13CE52702272C7C4003BBF37 /* LaunchScreen.storyboard in Resources */,
+				8ED829AB2275FAEB00122E73 /* BottomSheetView.xib in Resources */,
 				13CE526D2272C7C4003BBF37 /* Assets.xcassets in Resources */,
 				13CE526B2272C7C3003BBF37 /* Main.storyboard in Resources */,
 				13B474842273365500E68DB7 /* Slide.xib in Resources */,
@@ -209,6 +263,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		076C9E4C1393806C49937E4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewQuestions-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB64F6809F87A4159049720F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewQuestions/Pods-NewQuestions-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewQuestions/Pods-NewQuestions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13CE525E2272C7C3003BBF37 /* Sources */ = {
@@ -218,17 +325,25 @@
 				13CE52782272C841003BBF37 /* Questions.swift in Sources */,
 				132429CF2274B6D000D6B1B1 /* IntroViewController.swift in Sources */,
 				13B474802273349C00E68DB7 /* ScrollViewController.swift in Sources */,
+				8ED829A92275FAEB00122E73 /* DepressionTests.swift in Sources */,
 				132429C22274944600D6B1B1 /* FirstPageViewController.swift in Sources */,
 				132429C62274945B00D6B1B1 /* ThirdPageViewController.swift in Sources */,
 				13CE52682272C7C3003BBF37 /* ViewController.swift in Sources */,
+				8ED8299E2275FAB400122E73 /* BottomSheetController.swift in Sources */,
+				8ED829AA2275FAEB00122E73 /* Feedbacks.swift in Sources */,
 				132429BE2274919600D6B1B1 /* HomeViewController.swift in Sources */,
 				132429C42274945100D6B1B1 /* SecondPageViewController.swift in Sources */,
+				8ED8299F2275FAB400122E73 /* BottomSheetView.swift in Sources */,
+				8ED829A72275FAEB00122E73 /* Users.swift in Sources */,
 				13CE52662272C7C3003BBF37 /* AppDelegate.swift in Sources */,
 				13B474822273363C00E68DB7 /* Slide.swift in Sources */,
 				13E4E4282275868600689E06 /* Intro2ViewController.swift in Sources */,
 				132429C02274940B00D6B1B1 /* PageViewController.swift in Sources */,
 				13B4747C227331F300E68DB7 /* SecondViewController.swift in Sources */,
+				8ED829A82275FAEB00122E73 /* Challenges.swift in Sources */,
 				13B4747A227327DB00E68DB7 /* QuestionData.swift in Sources */,
+				8ED829A62275FAEB00122E73 /* Tests.swift in Sources */,
+				8ED829B12276887700122E73 /* AllChallengesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,10 +487,11 @@
 		};
 		13CE52752272C7C4003BBF37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C8ED7CF90686377B1C3A2A /* Pods-NewQuestions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NZQAU3W3J4;
+				DEVELOPMENT_TEAM = 26R5URXZ3V;
 				INFOPLIST_FILE = "$(SRCROOT)/NewQuestions/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,10 +506,11 @@
 		};
 		13CE52762272C7C4003BBF37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3428714EAFCF758A9DBD5B /* Pods-NewQuestions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NZQAU3W3J4;
+				DEVELOPMENT_TEAM = 26R5URXZ3V;
 				INFOPLIST_FILE = "$(SRCROOT)/NewQuestions/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
