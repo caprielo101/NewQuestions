@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var questionCounter: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet var buttons: [UIButton]!
@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var prevButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
+    
     let allQuestions = QuestionData()
     var questionNumber = 0
     var selectedAnswer = 0
@@ -33,7 +34,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.setNeedsStatusBarAppearanceUpdate()
         // Do any additional setup after loading the view.
-        view.backgroundColor = .lightGray
+        //view.backgroundColor = .lightGray
         questionLabel.textColor = .white
         setupButton()
         updateQuestion()
@@ -109,6 +110,14 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let secondViewController = segue.destination as! SecondViewController
         secondViewController.points = Double(points)
+    }
+    
+    @IBAction func testInfoButton(_ sender: Any) {
+        let alert = UIAlertController(title: "Credit", message: "This test based on PHQ-9 (Patient Health Questionnaire-9) by Dr. Kurt Kroenke", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
     }
     
     @IBAction func buttonAction(_ sender: UIButton) {

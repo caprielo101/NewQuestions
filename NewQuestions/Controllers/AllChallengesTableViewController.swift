@@ -9,18 +9,27 @@
 import UIKit
 
 struct Challenge {
-    
+    var title: String
+    var background: String
+    var enable: Bool = true
 }
 
 class ChallengeTableViewCell: UITableViewCell {
-    
+    @IBOutlet weak var challengeLabel: UILabel!
+    @IBOutlet weak var challengeButton: UIButton!
+    @IBOutlet weak var comingSoonLabel: UILabel!
 }
 
 class AllChallengesTableViewController: UITableViewController {
 
+    @IBOutlet var tableVIew: UITableView!
+    var challengeList: [Challenge] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableVIew.backgroundView = UIImageView(image: UIImage(named: "Background Image App Blur"))
+        challengeList.append(Challenge(title: "4-7-8 Breathing", background: "breathing", enable: true))
+        challengeList.append(Challenge(title: "Meditation", background: "meditation", enable: false))
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -32,24 +41,43 @@ class AllChallengesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 2
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "challengeCell", for: indexPath) as! ChallengeTableViewCell
 
         // Configure the cell...
+        let challenge = challengeList[indexPath.row]
+        cell.challengeLabel?.text = challenge.title
+        print(challenge.background)
+
+        cell.challengeButton.isEnabled = challenge.enable
+        cell.comingSoonLabel.isHidden = challenge.enable
+        cell.challengeButton.tag = indexPath.row
+        cell.challengeButton.setBackgroundImage(UIImage(named: challenge.background), for: .normal)
+        cell.challengeButton.addTarget(self, action: #selector(challengButtonTapped(_:)), for: .touchUpInside)
 
         return cell
     }
-    */
+    
+    @objc func challengButtonTapped(_ sender: UIButton) {
+        if sender.tag == 0 {
+            print("Breathing")
+            performSegue(withIdentifier: "GoToBreathing", sender: self)
+        }
+        else if sender.tag == 1 {
+            print("Meditation")
+        }
+    }
 
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

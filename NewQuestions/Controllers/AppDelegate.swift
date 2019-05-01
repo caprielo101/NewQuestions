@@ -17,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let navigationBar = UINavigationBar.appearance()
+        navigationBar.tintColor = UIColor.white
+        navigationBar.barTintColor = UIColor.black
+        // change navigation item title color
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         
         let realm = try! Realm()
         print(Realm.Configuration.defaultConfiguration.fileURL)
@@ -43,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         else {
             //go to dashboard
             print("DASHBOARD")
-            nextViewController = storyboard.instantiateViewController(withIdentifier: "BottomSheetController") as! BottomSheetController
+            nextViewController = storyboard.instantiateViewController(withIdentifier: "DaschboardNavigationController") as! UINavigationController
         }
         self.window?.rootViewController = nextViewController
         
@@ -56,16 +61,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //4 6 8 breathing
         let challenge1 = Challenges()
         challenge1.id = 1
-        challenge1.tiitle = "4-6-8 Breathing"
+        challenge1.tiitle = "4-7-8 Breathing"
         challenge1.desc = """
-        1. First, let your lips part. Make a whooshing sound, exhaling completely through your mouth.\n
-        2. Next, close your lips, inhaling silently through your nose as you count to four in your head.\n
-        3. Then, for seven seconds, hold your breath.\n
-        4. Make another whooshing exhale from your mouth for eight seconds.
+        The 4-7-8 breathing technique, also known as "relaxing breath," involves:\n
+        
+        1.    Breathing in for 4 seconds through the nose\n
+        
+        2.    Holding the breath for 7 seconds\n
+        
+        3.    Exhaling for 8 seconds through the mouth\n
+        
+        This breathing technique aims to reduce stress and anxiety.\n
+        
+        We recommend trying this for 2-4 sets.
         """
+        
         try! realm.write {
             //challenges
-            realm.add(challenge1)
+            realm.add(challenge1)   
         }
     }
     
@@ -90,7 +103,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

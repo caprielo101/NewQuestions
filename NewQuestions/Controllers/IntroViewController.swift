@@ -19,13 +19,15 @@ class IntroViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //click anywhere to dismiss keyboard
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: Selector("endEditing:")))
         setNeedsStatusBarAppearanceUpdate()
         view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         NameTextField.addBottomBorder()
         NameTextField.contentVerticalAlignment = .center;
         NameTextField.textAlignment = .center;
         setupButton()
-        
         // Do any additional setup after loading the view.
     }
     
@@ -73,6 +75,14 @@ class IntroViewController: UIViewController {
 
 }
 
+func textFieldShouldReturn(textField: UITextField) -> Bool {
+    
+    textField.resignFirstResponder()
+    //or
+    //self.view.endEditing(true)
+    return true
+}
+
 extension UITextField {
     
     func addBottomBorder(){
@@ -81,6 +91,5 @@ extension UITextField {
         bottomLine.backgroundColor = UIColor.white.cgColor
         self.borderStyle = UITextField.BorderStyle.none
         self.layer.addSublayer(bottomLine)
-        
     }
 }
