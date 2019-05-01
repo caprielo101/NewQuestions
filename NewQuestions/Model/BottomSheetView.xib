@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Heavy.otf">
+            <string>SFProDisplay-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomSheetView" customModule="NewQuestions" customModuleProvider="target">
+            <connections>
+                <outlet property="challengeDescriptionLabel" destination="pGF-pP-FSv" id="fbC-Ds-cnc"/>
+                <outlet property="challengeLabel" destination="eYt-oP-HQl" id="V6z-Qj-JBH"/>
+                <outlet property="handleArea" destination="iN0-l3-epB" id="7Zc-sG-CU9"/>
+                <outlet property="view" destination="iN0-l3-epB" id="5VU-tN-tvc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="626"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxn-mj-qwu">
+                    <rect key="frame" x="179" y="11" width="56" height="3"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="XZE-Ah-dqr"/>
+                        <constraint firstAttribute="width" constant="56" id="ZGT-7l-SFq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfp-ui-YUp">
+                    <rect key="frame" x="179" y="17" width="56" height="3"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="LAl-iv-Ym6"/>
+                        <constraint firstAttribute="width" constant="56" id="gO0-PX-dIj"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Challenge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMO-zO-y5U">
+                    <rect key="frame" x="20" y="44" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGF-pP-FSv">
+                    <rect key="frame" x="20" y="141" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpJ-Kv-MbH">
+                    <rect key="frame" x="33" y="191.5" width="348" height="24"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Heavy" family="SF Pro Display" pointSize="20"/>
+                    <state key="normal" title="START" backgroundImage="Rounded Rectangle Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="challengeStart:" destination="-1" eventType="touchUpInside" id="KQw-3A-gnO"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYt-oP-HQl">
+                    <rect key="frame" x="90" y="86" width="234" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pfp-ui-YUp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="179" id="1iV-06-zig"/>
+                <constraint firstAttribute="trailing" secondItem="oxn-mj-qwu" secondAttribute="trailing" constant="179" id="C6J-sx-60D"/>
+                <constraint firstAttribute="trailing" secondItem="pfp-ui-YUp" secondAttribute="trailing" constant="179" id="DBY-jL-ZEF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DpJ-Kv-MbH" secondAttribute="trailing" constant="33" id="F6C-oy-UVm"/>
+                <constraint firstItem="MMO-zO-y5U" firstAttribute="top" secondItem="pfp-ui-YUp" secondAttribute="bottom" constant="24" id="G5r-Oe-40Y"/>
+                <constraint firstItem="eYt-oP-HQl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="90" id="OgU-wP-uaE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MMO-zO-y5U" secondAttribute="trailing" constant="20" id="Qer-zh-9nA"/>
+                <constraint firstItem="eYt-oP-HQl" firstAttribute="top" secondItem="MMO-zO-y5U" secondAttribute="bottom" constant="8" id="Rpm-mD-JEP"/>
+                <constraint firstItem="DpJ-Kv-MbH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="33" id="W8Q-wZ-qyZ"/>
+                <constraint firstItem="oxn-mj-qwu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="179" id="X76-Qq-io8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eYt-oP-HQl" secondAttribute="trailing" constant="90" id="c1G-J7-lxW"/>
+                <constraint firstItem="pGF-pP-FSv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="cpJ-XG-aqe"/>
+                <constraint firstItem="MMO-zO-y5U" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="gus-NQ-6Pu"/>
+                <constraint firstItem="pGF-pP-FSv" firstAttribute="top" secondItem="eYt-oP-HQl" secondAttribute="bottom" constant="34" id="hGY-W5-mTK"/>
+                <constraint firstItem="oxn-mj-qwu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="iEi-Ef-zR4"/>
+                <constraint firstItem="DpJ-Kv-MbH" firstAttribute="top" secondItem="pGF-pP-FSv" secondAttribute="bottom" constant="30" id="pg0-tY-i2O"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pGF-pP-FSv" secondAttribute="trailing" constant="20" id="qgm-bu-dBW"/>
+                <constraint firstItem="pfp-ui-YUp" firstAttribute="top" secondItem="oxn-mj-qwu" secondAttribute="bottom" constant="3" id="unU-U9-Q5Y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-52.173913043478265" y="-34.821428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Rounded Rectangle Button" width="347" height="54"/>
+    </resources>
+</document>
