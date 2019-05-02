@@ -21,7 +21,7 @@ class IntroViewController: UIViewController {
         super.viewDidLoad()
         
         //click anywhere to dismiss keyboard
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: Selector("endEditing:")))
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         setNeedsStatusBarAppearanceUpdate()
         view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         NameTextField.addBottomBorder()

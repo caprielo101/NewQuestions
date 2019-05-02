@@ -33,7 +33,7 @@ class BreathingViewController: UIViewController {
     var setCounter = 1
     var tempLoop = 0
     
-    var timerInterval = 0.2
+    var timerInterval:Double = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()

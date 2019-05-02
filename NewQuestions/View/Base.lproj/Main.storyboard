@@ -71,8 +71,8 @@
                             <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGh-me-W2u" userLabel="Overlay View">
                                 <rect key="frame" x="0.0" y="200" width="414" height="300"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Vincent!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgF-6q-hgu">
-                                        <rect key="frame" x="100" y="40" width="214" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Vincent!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgF-6q-hgu">
+                                        <rect key="frame" x="20" y="40" width="374" height="36"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -92,10 +92,10 @@ Simple challenges will be provided to elevate your mood and hopefully reduce you
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="bIE-KK-m43" secondAttribute="trailing" constant="20" id="1Vk-wc-vi0"/>
-                                    <constraint firstItem="BgF-6q-hgu" firstAttribute="leading" secondItem="eGh-me-W2u" secondAttribute="leading" constant="100" id="9IM-0e-Exm"/>
+                                    <constraint firstItem="BgF-6q-hgu" firstAttribute="leading" secondItem="eGh-me-W2u" secondAttribute="leading" constant="20" id="9IM-0e-Exm"/>
                                     <constraint firstItem="BgF-6q-hgu" firstAttribute="top" secondItem="eGh-me-W2u" secondAttribute="top" constant="40" id="M3x-g3-VWX"/>
                                     <constraint firstItem="bIE-KK-m43" firstAttribute="leading" secondItem="eGh-me-W2u" secondAttribute="leading" constant="20" id="ejG-oX-aLA"/>
-                                    <constraint firstAttribute="trailing" secondItem="BgF-6q-hgu" secondAttribute="trailing" constant="100" id="f5G-vD-wuB"/>
+                                    <constraint firstAttribute="trailing" secondItem="BgF-6q-hgu" secondAttribute="trailing" constant="20" id="f5G-vD-wuB"/>
                                     <constraint firstAttribute="height" constant="300" id="mkM-Xv-cWT"/>
                                     <constraint firstItem="bIE-KK-m43" firstAttribute="top" secondItem="BgF-6q-hgu" secondAttribute="bottom" constant="30" id="rQE-gD-72F"/>
                                 </constraints>
@@ -371,6 +371,30 @@ Simple challenges will be provided to elevate your mood and hopefully reduce you
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background Result" translatesAutoresizingMaskIntoConstraints="NO" id="gdP-rP-BAX">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZE-Yd-7zZ">
+                                <rect key="frame" x="90" y="68" width="234" height="217"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Round Gradient" translatesAutoresizingMaskIntoConstraints="NO" id="gTz-6A-S3W">
+                                        <rect key="frame" x="0.0" y="0.0" width="234" height="217"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qs-cc-geP">
+                                        <rect key="frame" x="20" y="83.5" width="194" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wy2-1W-fBf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="60"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1Qs-cc-geP" firstAttribute="leading" secondItem="GZE-Yd-7zZ" secondAttribute="leading" constant="20" id="Dut-tV-dQd"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Qs-cc-geP" secondAttribute="trailing" constant="20" id="Ipb-sM-45b"/>
+                                    <constraint firstItem="1Qs-cc-geP" firstAttribute="centerY" secondItem="GZE-Yd-7zZ" secondAttribute="centerY" id="SWd-5d-q24"/>
+                                    <constraint firstAttribute="height" constant="217" id="syW-bm-vKd"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMo-mQ-b4k">
                                 <rect key="frame" x="33" y="797" width="348" height="50"/>
                                 <constraints>
@@ -385,16 +409,6 @@ Simple challenges will be provided to elevate your mood and hopefully reduce you
                                     <action selector="quizButtonAction:" destination="H0p-h7-THy" eventType="touchUpInside" id="yu5-x8-NMF"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Round Gradient" translatesAutoresizingMaskIntoConstraints="NO" id="gTz-6A-S3W">
-                                <rect key="frame" x="90" y="68" width="234" height="217"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qs-cc-geP">
-                                <rect key="frame" x="20" y="151" width="374" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="60"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oz-QN-iFD">
                                 <rect key="frame" x="90" y="309" width="234" height="54"/>
                                 <constraints>
@@ -409,14 +423,14 @@ Simple challenges will be provided to elevate your mood and hopefully reduce you
                                     <segue destination="BYZ-38-t0r" kind="presentation" identifier="GoToTest" id="fXF-Jj-mot"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="you are MODERATELY DEPRESSED" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0H-KX-hNo">
-                                <rect key="frame" x="19" y="428" width="374" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you are MODERATELY DEPRESSED" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0H-KX-hNo">
+                                <rect key="frame" x="20" y="428" width="374" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Suggestion Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mD-rX-WeP">
-                                <rect key="frame" x="19" y="462" width="374" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestion Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mD-rX-WeP">
+                                <rect key="frame" x="20" y="467" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -424,26 +438,27 @@ Simple challenges will be provided to elevate your mood and hopefully reduce you
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gTz-6A-S3W" firstAttribute="leading" secondItem="sTg-3Y-dmu" secondAttribute="leading" constant="90" id="5Zt-pg-9jw"/>
-                            <constraint firstItem="sTg-3Y-dmu" firstAttribute="trailing" secondItem="gTz-6A-S3W" secondAttribute="trailing" constant="90" id="7o9-dX-0DM"/>
                             <constraint firstItem="B0H-KX-hNo" firstAttribute="leading" secondItem="sTg-3Y-dmu" secondAttribute="leading" constant="20" id="8Xi-3R-Pyg"/>
+                            <constraint firstItem="B0H-KX-hNo" firstAttribute="centerX" secondItem="RHj-Cu-vBO" secondAttribute="centerX" id="9pe-4q-Wv8"/>
                             <constraint firstItem="sTg-3Y-dmu" firstAttribute="trailing" secondItem="4mD-rX-WeP" secondAttribute="trailing" constant="20" id="ANs-kG-IhP"/>
+                            <constraint firstItem="GZE-Yd-7zZ" firstAttribute="leading" secondItem="sTg-3Y-dmu" secondAttribute="leading" constant="90" id="F2g-xR-OTt"/>
+                            <constraint firstItem="sTg-3Y-dmu" firstAttribute="trailing" secondItem="GZE-Yd-7zZ" secondAttribute="trailing" constant="90" id="JzK-yN-CuF"/>
                             <constraint firstItem="sTg-3Y-dmu" firstAttribute="bottom" secondItem="aMo-mQ-b4k" secondAttribute="bottom" constant="15" id="Lcx-RK-mh1"/>
                             <constraint firstItem="sTg-3Y-dmu" firstAttribute="trailing" secondItem="gdP-rP-BAX" secondAttribute="trailing" id="LwV-u3-e47"/>
-                            <constraint firstItem="6oz-QN-iFD" firstAttribute="top" secondItem="gTz-6A-S3W" secondAttribute="bottom" constant="24" id="Qxl-zU-6oM"/>
                             <constraint firstItem="gdP-rP-BAX" firstAttribute="leading" secondItem="sTg-3Y-dmu" secondAttribute="leading" id="S4D-wH-r1S"/>
-                            <constraint firstItem="6oz-QN-iFD" firstAttribute="width" secondItem="gTz-6A-S3W" secondAttribute="width" id="TiW-2E-hV6"/>
                             <constraint firstItem="sTg-3Y-dmu" firstAttribute="trailing" secondItem="6oz-QN-iFD" secondAttribute="trailing" constant="90" id="Vvg-kd-fdl"/>
                             <constraint firstItem="sTg-3Y-dmu" firstAttribute="trailing" secondItem="aMo-mQ-b4k" secondAttribute="trailing" constant="33" id="XjN-CM-qDz"/>
                             <constraint firstItem="sTg-3Y-dmu" firstAttribute="trailing" secondItem="B0H-KX-hNo" secondAttribute="trailing" constant="20" id="XrN-v5-3iw"/>
+                            <constraint firstItem="GZE-Yd-7zZ" firstAttribute="centerX" secondItem="RHj-Cu-vBO" secondAttribute="centerX" id="b89-8X-hqe"/>
                             <constraint firstItem="6oz-QN-iFD" firstAttribute="leading" secondItem="sTg-3Y-dmu" secondAttribute="leading" constant="90" id="fzo-tI-KWI"/>
-                            <constraint firstItem="gTz-6A-S3W" firstAttribute="top" secondItem="sTg-3Y-dmu" secondAttribute="top" constant="24" id="gco-AP-5x8"/>
-                            <constraint firstItem="4mD-rX-WeP" firstAttribute="top" secondItem="B0H-KX-hNo" secondAttribute="bottom" constant="10" id="niB-UY-GtL"/>
+                            <constraint firstItem="GZE-Yd-7zZ" firstAttribute="top" secondItem="sTg-3Y-dmu" secondAttribute="top" constant="24" id="nTm-g0-0fC"/>
+                            <constraint firstItem="4mD-rX-WeP" firstAttribute="top" secondItem="B0H-KX-hNo" secondAttribute="bottom" constant="15" id="niB-UY-GtL"/>
                             <constraint firstAttribute="bottom" secondItem="gdP-rP-BAX" secondAttribute="bottom" id="pG3-yp-qZp"/>
                             <constraint firstItem="gdP-rP-BAX" firstAttribute="top" secondItem="RHj-Cu-vBO" secondAttribute="top" id="pxZ-yX-6kb"/>
                             <constraint firstItem="B0H-KX-hNo" firstAttribute="top" secondItem="6oz-QN-iFD" secondAttribute="bottom" constant="65" id="rYS-bq-VZ4"/>
                             <constraint firstItem="aMo-mQ-b4k" firstAttribute="leading" secondItem="sTg-3Y-dmu" secondAttribute="leading" constant="33" id="u4B-OC-g5p"/>
                             <constraint firstItem="4mD-rX-WeP" firstAttribute="leading" secondItem="sTg-3Y-dmu" secondAttribute="leading" constant="20" id="vgl-oA-cOb"/>
+                            <constraint firstItem="6oz-QN-iFD" firstAttribute="top" secondItem="GZE-Yd-7zZ" secondAttribute="bottom" constant="24" id="wGP-A5-LJX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sTg-3Y-dmu"/>
                     </view>
@@ -575,7 +590,21 @@ Simple challenges will be provided to elevate your mood and hopefully reduce you
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BpJ-32-tS8"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Dashboard" id="5Ah-fF-kIr"/>
+                    <navigationItem key="navigationItem" title="Dashboard" id="5Ah-fF-kIr">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="twt-yU-XRl">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UBb-of-6Ee">
+                                <rect key="frame" x="334" y="5.5" width="60" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteAll:" destination="Vpg-CR-bFN" eventType="touchUpInside" id="GW3-m4-iz8"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="moodChart" destination="Sll-90-ACO" id="ySu-eq-q3d"/>
                         <outlet property="testCategoryLabel" destination="IrV-RM-6ce" id="Qp4-2H-gGP"/>
@@ -583,6 +612,7 @@ Simple challenges will be provided to elevate your mood and hopefully reduce you
                         <outlet property="testPercentageLabel" destination="uQd-Je-Pno" id="Hcn-24-WHc"/>
                         <segue destination="77N-Ft-aGV" kind="presentation" identifier="GoToBreathing" id="o6R-gF-A9Q"/>
                         <segue destination="ghy-u5-nLf" kind="presentation" identifier="GoToTestResult" id="1vu-9b-jGW"/>
+                        <segue destination="lu1-R2-Nsd" kind="presentation" identifier="ShowIntro" id="wbM-hW-SsS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Qf-K2-GSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1084,7 +1114,7 @@ Simple challenges will be provided to elevate your mood and hopefully reduce you
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIX-fT-haR">
-                                <rect key="frame" x="25" y="50" width="53" height="30"/>
+                                <rect key="frame" x="25" y="50" width="50" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="XcE-T0-Wa3"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="lbq-F2-HsQ"/>
@@ -1098,13 +1128,11 @@ Simple challenges will be provided to elevate your mood and hopefully reduce you
                                     <action selector="cancelAction:" destination="77N-Ft-aGV" eventType="touchUpInside" id="CPY-VU-6Hm"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wDh-LC-T17">
-                                <rect key="frame" x="21" y="217" width="373" height="315"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDh-LC-T17">
+                                <rect key="frame" x="20" y="217" width="374" height="315"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPl-Aq-egK">
-                                        <rect key="frame" x="8" y="0.0" width="357" height="315"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPl-Aq-egK">
+                                        <rect key="frame" x="20" y="15.5" width="334" height="284.5"/>
                                         <attributedString key="attributedText">
                                             <fragment>
                                                 <string key="content">The 4-7-8 breathing technique, also known as "relaxing breath," involves:
@@ -1129,17 +1157,26 @@ We recommend trying this for 2-4 sets.</string>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.01176470588" blue="0.066666666669999999" alpha="0.70250963180000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lPl-Aq-egK" secondAttribute="trailing" constant="20" id="Btw-Gx-XEg"/>
+                                    <constraint firstItem="lPl-Aq-egK" firstAttribute="centerX" secondItem="wDh-LC-T17" secondAttribute="centerX" id="TGu-oc-3xA"/>
+                                    <constraint firstItem="lPl-Aq-egK" firstAttribute="leading" secondItem="wDh-LC-T17" secondAttribute="leading" constant="20" id="WxB-3F-TC9"/>
+                                    <constraint firstItem="lPl-Aq-egK" firstAttribute="centerY" secondItem="wDh-LC-T17" secondAttribute="centerY" id="brG-3s-jRD"/>
+                                    <constraint firstAttribute="height" constant="315" id="zwZ-85-PfR"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY4-yQ-wfd">
-                                <rect key="frame" x="34" y="793" width="347" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY4-yQ-wfd">
+                                <rect key="frame" x="33" y="797" width="348" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ugS-jU-vIZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Heavy" family="SF Pro Display" pointSize="20"/>
-                                <state key="normal" title="START" backgroundImage="Rounded Rectangle Button">
+                                <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -1151,16 +1188,25 @@ We recommend trying this for 2-4 sets.</string>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="40l-o7-4HG" secondAttribute="trailing" id="3Ca-K4-gwq"/>
                             <constraint firstItem="40l-o7-4HG" firstAttribute="leading" secondItem="tGv-H8-fwi" secondAttribute="leading" id="CCn-v8-Wm1"/>
+                            <constraint firstItem="wDh-LC-T17" firstAttribute="leading" secondItem="tGv-H8-fwi" secondAttribute="leading" constant="20" id="ELA-UP-6Bp"/>
+                            <constraint firstItem="tGv-H8-fwi" firstAttribute="trailing" secondItem="KY4-yQ-wfd" secondAttribute="trailing" constant="33" id="FH5-TD-0fb"/>
+                            <constraint firstItem="KY4-yQ-wfd" firstAttribute="leading" secondItem="tGv-H8-fwi" secondAttribute="leading" constant="33" id="UlH-NT-Gnm"/>
+                            <constraint firstItem="tGv-H8-fwi" firstAttribute="trailing" secondItem="wDh-LC-T17" secondAttribute="trailing" constant="20" id="VY9-Rz-Th5"/>
                             <constraint firstItem="eIX-fT-haR" firstAttribute="leading" secondItem="8ND-o0-PFW" secondAttribute="leading" constant="25" id="fAu-a5-9vx"/>
                             <constraint firstItem="40l-o7-4HG" firstAttribute="top" secondItem="8ND-o0-PFW" secondAttribute="top" id="fNc-SE-XXi"/>
+                            <constraint firstItem="wDh-LC-T17" firstAttribute="top" secondItem="40l-o7-4HG" secondAttribute="bottom" constant="32" id="hbo-MN-Ew9"/>
                             <constraint firstItem="eIX-fT-haR" firstAttribute="top" secondItem="8ND-o0-PFW" secondAttribute="top" constant="50" id="y3R-Fu-eE0"/>
+                            <constraint firstItem="tGv-H8-fwi" firstAttribute="bottom" secondItem="KY4-yQ-wfd" secondAttribute="bottom" constant="15" id="yl9-24-nFf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tGv-H8-fwi"/>
                     </view>
+                    <connections>
+                        <outlet property="StartButton" destination="KY4-yQ-wfd" id="MgL-3s-gXn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YA4-px-mpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1397" y="2492"/>
+            <point key="canvasLocation" x="1394.2028985507247" y="2491.0714285714284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l38-4J-iQQ">
@@ -1193,7 +1239,6 @@ We recommend trying this for 2-4 sets.</string>
         <image name="ICON fix 2" width="352" height="530"/>
         <image name="Neutral Emoji" width="70" height="69"/>
         <image name="Round Gradient" width="217" height="217"/>
-        <image name="Rounded Rectangle Button" width="347" height="54"/>
         <image name="Sad Emoji" width="69" height="69"/>
     </resources>
     <inferredMetricsTieBreakers>

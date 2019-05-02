@@ -18,7 +18,7 @@ class QuestionData{
         
          list.append(Questions(number: 3, question: "Trouble falling or staying asleep, or sleeping too much?", answer: ["Not at all","Several days","More than half the days","Everyday"], selected: 0))
         
-        list.append(Questions(number: 4, question: "Feeling tired or having little energyc?", answer: ["Not at all","Several days","More than half the days","Everyday"], selected: 0))
+        list.append(Questions(number: 4, question: "Feeling tired or having little energy?", answer: ["Not at all","Several days","More than half the days","Everyday"], selected: 0))
         
         list.append(Questions(number: 5, question: "Poor appetite or overeating?", answer: ["Not at all","Several days","More than half the days","Everyday"], selected: 0))
         

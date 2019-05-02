@@ -59,7 +59,6 @@ class BottomSheetController: UIViewController, challengeStart {
         let percentage = Double(test!.score) / maximumScore * 100
         print("SCORE: \(percentage)")
         
-      
         setupCard()
         
     }
@@ -128,6 +127,7 @@ class BottomSheetController: UIViewController, challengeStart {
         moodChart.pinchZoomEnabled = false
         moodChart.scaleXEnabled = false
         moodChart.scaleYEnabled = false
+        
     }
     
     
@@ -147,6 +147,14 @@ class BottomSheetController: UIViewController, challengeStart {
     @IBAction func testButton(_ sender: Any) {
         
         print("retest")
+    }
+    
+    @IBAction func deleteAll(_ sender: Any) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.deleteAll()
+        }
+        performSegue(withIdentifier: "ShowIntro", sender: self)
     }
     
     func setupCard() {
@@ -252,7 +260,6 @@ class BottomSheetController: UIViewController, challengeStart {
             animator.continueAnimation(withTimingParameters: nil, durationFactor: 0)
         }
     }
-
     /*
     // MARK: - Navigation
 

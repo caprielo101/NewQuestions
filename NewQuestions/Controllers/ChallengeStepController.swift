@@ -10,9 +10,12 @@ import UIKit
 
 class ChallengeStepController: UIViewController {
 
+    @IBOutlet weak var StartButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupButton()
         // Do any additional setup after loading the view.
     }
     
@@ -21,5 +24,9 @@ class ChallengeStepController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-
+    func setupButton() {
+        StartButton.layer.cornerRadius = 20
+        StartButton.layer.borderWidth = 0.5
+        StartButton.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    }
 }

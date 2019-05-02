@@ -29,8 +29,11 @@ class BottomSheetView: UIViewController {
         let realm = try! Realm()
         
         let challenge1 = realm.objects(Challenges.self).filter("id == \(challengeID)").first
-        challengeLabel.text = challenge1!.tiitle!
-        challengeDescriptionLabel.text = challenge1!.desc!
+        if let challenge = challenge1 {
+            challengeLabel.text = challenge.tiitle!
+            challengeDescriptionLabel.text = challenge.desc!
+
+        }
     }
     
     
